@@ -1,0 +1,14 @@
+#info
+def infol (name, age, ID, phone):
+    file = open('info.txt' , 'w')
+    file.write(name +'\n')
+    file.write(age +'\n')
+    file.write(ID +'\n')
+    file.write(phone +'\n')
+    file.close()
+    print('information stored')
+    
+def read_info (name, age, ID, phone):
+    file = open('info.txt', 'r')
+    print(file.read())
+    file.close()
